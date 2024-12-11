@@ -1,7 +1,8 @@
 import React from 'react';
 import { Clock, Truck, Shield, HeartPulse } from 'lucide-react';
+import FeatureCard from './FeatureCard';
 
-export default function Features() {
+function Features() {
   const features = [
     {
       icon: <Clock className="w-12 h-12 text-teal-600" />,
@@ -40,17 +41,12 @@ export default function Features() {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
-            <div
-              key={index}
-              className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
-            >
-              <div className="mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
-            </div>
+            <FeatureCard key={index} {...feature} />
           ))}
         </div>
       </div>
     </div>
   );
 }
+
+export default Features;
