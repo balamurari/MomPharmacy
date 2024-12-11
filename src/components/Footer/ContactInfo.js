@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 function ContactInfo() {
   return (
@@ -11,6 +11,10 @@ function ContactInfo() {
       <div className="flex items-center gap-2 text-gray-400">
         <Mail size={20} />
         <span>Ps@mompharmacy.in</span>
+      </div>
+      <div className="flex items-center gap-2 text-gray-400">
+        <MapPin size={40} />
+        <span>No.3, 1st Main Road Hebbal, Kempapura, Bangalore - 560024 </span>
       </div>
     </div>
   );
