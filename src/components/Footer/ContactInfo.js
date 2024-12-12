@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 
 function ContactInfo() {
   return (
-    <div className="space-y-2">
+    <div id="contact" className="space-y-2">
       <div className="flex items-center gap-2 text-gray-400">
         <Phone size={20} />
         <a href="tel:+917702068334" className="hover:text-blue-500">

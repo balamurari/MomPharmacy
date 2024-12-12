@@ -5,7 +5,7 @@ import FeatureCard from './FeatureCard';
 function Features() {
   const features = [
     {
-      icon: <Clock className="w-12 h-12 text-teal-600" />,
+      icon: <Clock id="10minutes" className="w-12 h-12 text-teal-600" />,
       title: "10-Minute Delivery",
       description: "Swift medicine delivery within 10 minutes of order placement"
     },
@@ -29,7 +29,7 @@ function Features() {
   return (
     <div className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div id="about" className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
             Why Choose Mom Pharmacy?
           </h2>
