@@ -1,18 +1,17 @@
-import React from 'react';
-import Navbar from './components/Navbar/Navbar';
-import Hero from './components/Hero/Hero';
-import Features from './components/Features/Features';
-import Footer from './components/Footer/Footer';
+import React, { useState } from 'react';
+import HomePage from './Pages/HomePage';
 
 function App() {
+  
+
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <Hero />
-      <Features />
-      <Footer />
+    <div>
+      <HomePage/>
     </div>
   );
 }
 
 export default App;
+
+
+
